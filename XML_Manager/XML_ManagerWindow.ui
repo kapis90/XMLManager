@@ -35,7 +35,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="IteratonEdit">
+   <widget class="QLineEdit" name="IterationEdit">
     <property name="geometry">
      <rect>
       <x>70</x>

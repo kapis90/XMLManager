@@ -7,7 +7,14 @@ class XMLManager(QtGui.QMainWindow):
         QtGui.QWidget.__init__(self, parent)
         self.ui = Ui_XMLManager()
         self.ui.setupUi(self)
+        self.ui.OkButton.clicked.connect(self.CopyEntry)
 
+    def CopyEntry(self):
+        Nametext = self.ui.NameEdit.text()
+        self.ui.IterationEdit.setText(Nametext)
+
+
+        
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     myapp = XMLManager()
