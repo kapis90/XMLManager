@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>XMLManager</class>
+ <widget class="QWidget" name="XMLManager">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>XML Manager</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="AddTestcaseBox">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -25,7 +25,7 @@
    <property name="title">
     <string>Add testcase</string>
    </property>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="NameEdit">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -35,7 +35,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="IteratonEdit">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -57,12 +57,12 @@
     <property name="orientation">
      <enum>Qt::Vertical</enum>
     </property>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="NameLabel">
      <property name="text">
       <string>Name</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="IterationLabel">
      <property name="text">
       <string>Iterations</string>
      </property>
@@ -81,12 +81,12 @@
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="OkButton">
     <property name="text">
      <string>OK</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="CancelButton">
     <property name="text">
      <string>Cancel</string>
     </property>
@@ -94,5 +94,22 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>CancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>XMLManager</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
