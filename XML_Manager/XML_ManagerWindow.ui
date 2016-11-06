@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>402</width>
-    <height>92</height>
+    <width>392</width>
+    <height>220</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>231</width>
-     <height>61</height>
+     <y>80</y>
+     <width>281</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="title">
@@ -28,8 +28,8 @@
    <widget class="QLineEdit" name="NameEdit">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>10</y>
+      <x>80</x>
+      <y>20</y>
       <width>151</width>
       <height>20</height>
      </rect>
@@ -38,59 +38,101 @@
    <widget class="QLineEdit" name="IterationEdit">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>30</y>
+      <x>80</x>
+      <y>40</y>
       <width>151</width>
       <height>20</height>
      </rect>
     </property>
    </widget>
-   <widget class="QSplitter" name="splitter_2">
+   <widget class="QLabel" name="NameLabel">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>20</y>
       <width>47</width>
-      <height>26</height>
+      <height>16</height>
      </rect>
     </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
+    <property name="text">
+     <string>Name</string>
     </property>
-    <widget class="QLabel" name="NameLabel">
-     <property name="text">
-      <string>Name</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="IterationLabel">
-     <property name="text">
-      <string>Iterations</string>
-     </property>
-    </widget>
+   </widget>
+   <widget class="QLabel" name="IterationLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>47</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Iterations</string>
+    </property>
    </widget>
   </widget>
-  <widget class="QSplitter" name="splitter">
+  <widget class="QGroupBox" name="BrowseBox">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>20</y>
-     <width>75</width>
-     <height>46</height>
+     <x>10</x>
+     <y>10</y>
+     <width>371</width>
+     <height>51</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
+   <property name="title">
+    <string>Browse for XML File:</string>
    </property>
-   <widget class="QPushButton" name="OkButton">
-    <property name="text">
-     <string>OK</string>
+   <widget class="QLineEdit" name="XMLPathEdit">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>22</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="CancelButton">
+   <widget class="QPushButton" name="BrowseButton">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>21</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
     <property name="text">
-     <string>Cancel</string>
+     <string>Browse</string>
     </property>
    </widget>
+  </widget>
+  <widget class="QPushButton" name="CancelButton">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>171</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OkButton">
+   <property name="geometry">
+    <rect>
+     <x>121</x>
+     <y>171</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
   </widget>
  </widget>
  <resources/>

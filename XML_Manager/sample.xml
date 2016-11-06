@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BenchmarksToRun>
+	<Benchmark name="FA" iterations="1"/>
+	<Benchmark name="FA_recording" iterations="1"/>
+	<Benchmark name="FA_vbs_CandyTown" iterations="1"/>
+	<Benchmark name="FA_recording_CandyTown" iterations="1"/>
+	<Benchmark name="NorthStar_autoroute" iterations="1"/>
+</BenchmarksToRun>
