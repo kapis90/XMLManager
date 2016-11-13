@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <BenchmarksToRun>
-		<Benchmark name="Autoroute" iterations="1"/>
 		<Benchmark name="Cross" iterations="1"/>
+		<Benchmark name="Unravel" iterations="1"/>
+		<Benchmark name="Autoroute" iterations="1"/>
 		<Benchmark name="FA" iterations="1"/>
 		<Benchmark name="TEST" iterations="1"/>
-		<Benchmark name="Unravel" iterations="1"/>
 </BenchmarksToRun>

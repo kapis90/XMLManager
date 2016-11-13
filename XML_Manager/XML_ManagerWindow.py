@@ -50,15 +50,14 @@ class Ui_XMLManager(object):
         self.BrowseButton = QtGui.QPushButton(self.BrowseBox)
         self.BrowseButton.setGeometry(QtCore.QRect(285, 21, 75, 23))
         self.BrowseButton.setObjectName(_fromUtf8("BrowseButton"))
-        self.CancelButton = QtGui.QPushButton(XMLManager)
-        self.CancelButton.setGeometry(QtCore.QRect(202, 171, 75, 23))
-        self.CancelButton.setObjectName(_fromUtf8("CancelButton"))
+        self.SaveButton = QtGui.QPushButton(XMLManager)
+        self.SaveButton.setGeometry(QtCore.QRect(202, 171, 75, 23))
+        self.SaveButton.setObjectName(_fromUtf8("SaveButton"))
         self.OkButton = QtGui.QPushButton(XMLManager)
         self.OkButton.setGeometry(QtCore.QRect(121, 171, 75, 23))
         self.OkButton.setObjectName(_fromUtf8("OkButton"))
 
         self.retranslateUi(XMLManager)
-        QtCore.QObject.connect(self.CancelButton, QtCore.SIGNAL(_fromUtf8("clicked()")), XMLManager.close)
         QtCore.QMetaObject.connectSlotsByName(XMLManager)
 
     def retranslateUi(self, XMLManager):
@@ -68,6 +67,6 @@ class Ui_XMLManager(object):
         self.IterationLabel.setText(_translate("XMLManager", "Iterations", None))
         self.BrowseBox.setTitle(_translate("XMLManager", "Browse for XML File:", None))
         self.BrowseButton.setText(_translate("XMLManager", "Browse", None))
-        self.CancelButton.setText(_translate("XMLManager", "Cancel", None))
+        self.SaveButton.setText(_translate("XMLManager", "Save", None))
         self.OkButton.setText(_translate("XMLManager", "OK", None))
 

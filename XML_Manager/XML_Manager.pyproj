@@ -6,8 +6,7 @@
     <ProjectGuid>2d5ecb27-f7e7-48f3-b3ab-79d4aaba0892</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>XML_Manager.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <SearchPath>lib\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>XML_Manager</Name>
