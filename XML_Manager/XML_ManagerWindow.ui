@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>392</width>
-    <height>220</height>
+    <width>671</width>
+    <height>440</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,67 +17,31 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>80</y>
-     <width>281</width>
-     <height>71</height>
+     <y>55</y>
+     <width>656</width>
+     <height>326</height>
     </rect>
    </property>
    <property name="title">
-    <string>Add testcase</string>
+    <string>Manage benchmarks</string>
    </property>
-   <widget class="QLineEdit" name="NameEdit">
+   <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>10</x>
       <y>20</y>
-      <width>151</width>
-      <height>20</height>
+      <width>250</width>
+      <height>300</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="IterationEdit">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>40</y>
-      <width>151</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="NameLabel">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>47</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Name</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="IterationLabel">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>47</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Iterations</string>
     </property>
    </widget>
   </widget>
   <widget class="QGroupBox" name="BrowseBox">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>371</width>
+     <x>5</x>
+     <y>5</y>
+     <width>661</width>
      <height>51</height>
     </rect>
    </property>
@@ -87,9 +51,9 @@
    <widget class="QLineEdit" name="XMLPathEdit">
     <property name="geometry">
      <rect>
-      <x>11</x>
-      <y>22</y>
-      <width>271</width>
+      <x>10</x>
+      <y>20</y>
+      <width>561</width>
       <height>20</height>
      </rect>
     </property>
@@ -97,8 +61,8 @@
    <widget class="QPushButton" name="BrowseButton">
     <property name="geometry">
      <rect>
-      <x>285</x>
-      <y>21</y>
+      <x>580</x>
+      <y>18</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -108,11 +72,27 @@
     </property>
    </widget>
   </widget>
+  <widget class="QPushButton" name="ApplyButton">
+   <property name="geometry">
+    <rect>
+     <x>586</x>
+     <y>395</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
   <widget class="QPushButton" name="CancelButton">
    <property name="geometry">
     <rect>
-     <x>202</x>
-     <y>171</y>
+     <x>505</x>
+     <y>395</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -120,12 +100,15 @@
    <property name="text">
     <string>Cancel</string>
    </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
   </widget>
   <widget class="QPushButton" name="OkButton">
    <property name="geometry">
     <rect>
-     <x>121</x>
-     <y>171</y>
+     <x>425</x>
+     <y>395</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -133,25 +116,26 @@
    <property name="text">
     <string>OK</string>
    </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>XMLPathEdit</tabstop>
+  <tabstop>BrowseButton</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>OkButton</tabstop>
+  <tabstop>CancelButton</tabstop>
+  <tabstop>ApplyButton</tabstop>
+ </tabstops>
  <resources/>
- <connections>
-  <connection>
-   <sender>CancelButton</sender>
-   <signal>clicked()</signal>
-   <receiver>XMLManager</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>308</x>
-     <y>57</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>263</x>
-     <y>64</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup">
+   <property name="exclusive">
+    <bool>true</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
 </ui>
